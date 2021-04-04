@@ -13,7 +13,9 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css" integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
 </head>
@@ -21,7 +23,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="mindfackt-logo-yinyang.png" height="35px" class="py-1"/>Mindfackt</a>
+      <a class="navbar-brand" href="#"><img src="mindfackt-logo-yinyang.png" height="38px" class="py-1"/>Mindfackt</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,11 +49,12 @@
   </nav>
 
   <!-- Header -->
-  <header class="overlay-dark py-5 mb-5 bg-cover bg-center" style="background: url(galaxy-bg.jpg)">
+  <header class="overlay-dark py-5 mb-5 bg-cover" style="background: url(galaxy-bg.jpg)">
     <div class="overlay-content container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
-          <h1 class="display-4 d-letters mt-5 mb-2">More than meets the mind <img src="mindfackt-logo.png" height="155px" class="py-1"/></h1>
+          <img src="mindfackt-logo.png" height="155px" class="py-1"/>
+          <h1 class="display-6 d-letters mt-5 mb-2">More than meets the mind</h1>
           <p class="lead mb-5 text-white-50">
             <strong>Mindfact</strong> - something that you believe to be absolutely true, regardless of any evidence proving it so or despite that all evidence is contrary.
             <br/>
@@ -92,17 +95,17 @@
         <br/>
       </div>
       <div class="col-md-4 mb-5 text-white bg-secondary">
-        <h2 class="display-5 text-white mt-5 mb-2">Contact</h2>
+        <h2 class="display-5 text-white mt-5 mb-2 d-letters">Contact</h2>
         <hr>
         <address>
           <strong>Mindfackt Hobbyrative</strong>
           <br>
         </address>
         <address>
-          <abbr title="Phone">P:</abbr>
+          <abbr title="Phone"><i class="bi bi-telephone-inbound-fill"></i></abbr>
           +358(0)942450935
           <br>
-          <abbr title="Email">E:</abbr>
+          <abbr title="Email"><i class="bi bi-envelope-fill"></i></abbr>
           <a href="mailto:contact@mindfackt.info">contact@mindfackt.info</a>
         </address>
         <form action="https://formspree.io/f/mzbybdwv" method="POST">
@@ -115,7 +118,7 @@
           <label for="exampleFormControlTextarea1">Your message</label>
           <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-light">Send</button>
+        <button type="submit" class="btn btn-light">Send <i class="bi bi-inbox-fill"></i></button>
         </form>
       </div>
     </div>
@@ -132,28 +135,28 @@
     <!-- /.row -->
     <div class="row">
       <div class="col-md-4 mb-5">
-        <div class="card h-100 bg-light">
-          <img class="card-img-top" src="https://placeholder.pics/svg/250/2BA6FF-AAFFD5/FFFFFF/Living" alt="Mindhouse">
+        <div class="card h-100 bg-primary">
+          <i class="bi bi-house-fill text-center" style="font-size: 4rem; color: cornflowerblue;"></i>
           <div class="card-body">
             <h5 class="card-title">Mindhouse</h5>
-            <p class="card-text">Place to be and hangout for Mindfackt cosmosnauts. Kitchen and Sauna included.</p>
-            <a href="#" class="btn btn-primary">Go dreaming...</a>
+            <p class="card-text">Place to be and hangout for Mindfackt cosmonauts. Kitchen and Sauna included.</p>
+            <a href="https://sheet.zoho.eu/sheet/published/5nm7md8f1c6cf01674af0bfb54602285a37d3" class="btn btn-primary">Go dreaming...</a>
           </div>          
         </div>
       </div>
       <div class="col-md-4 mb-5">
-        <div class="card h-100 bg-light">
-          <img class="card-img-top" src="https://placeholder.pics/svg/250/FF845B-FFDE81/FFFFFF/Work" alt="Mindshop">
+        <div class="card h-100 bg-primary">
+          <i class="bi bi-tools text-center" style="font-size: 4rem; color: cornflowerblue;"></i>
           <div class="card-body">
             <h5 class="card-title">Mindshop</h5>
-            <p class="card-text">Workshop where Mindfackt cosmosnauts can implement their dreams. Mindshop will be located at Mindhouse.</p>
+            <p class="card-text">Workshop where Mindfackt cosmonauts can implement their dreams. Mindshop will be located at Mindhouse.</p>
             <a href="#" class="btn btn-primary">Dream on...</a>
           </div> 
         </div>
     </div>
       <div class="col-md-4 mb-5">
-        <div class="card h-100 bg-light">
-          <img class="card-img-top" src="https://placeholder.pics/svg/250/11C326-76FF3C/FFFFFF/people" alt="Commonmind">
+        <div class="card h-100 bg-primary">
+          <i class="bi bi-people-fill text-center" style="font-size: 4rem; color: cornflowerblue;"></i>
           <div class="card-body">
             <h5 class="card-title">Commonmind</h5>
             <p class="card-text">Shared resources and income with co-operative and democrative desicion making. Because together we can make it.</p>
@@ -179,8 +182,8 @@
                 <p class="small text-muted">More than meat, is the mind</p>
                 <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Mindfackt</a></p>
                 <ul class="list-inline mt-4">
-                    <li class="list-inline-item"><a href="https://facebook.com/mindfacktstore" target="_blank" title="facebook"><i class="fa fa-facebook"></i>f</a></li>
-                    <li class="list-inline-item"><a href="https://instagram.com/mindfacktstore" target="_blank" title="instagram"><i class="fa fa-instagram"></i>i</a></li>
+                    <li class="list-inline-item"><a href="https://facebook.com/mindfacktstore" target="_blank" title="facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://instagram.com/mindfacktstore" target="_blank" title="instagram"><i class="bi bi-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-6">
@@ -212,7 +215,7 @@
     </div>
 </footer>
     <script src="https://customerwidget.joinflow.com/tvx-customer-widget-app.js?widgetId=252e3c8a-5e42-479e-b36d-26d3907cb730" charset="utf-8" crossorigin="anonymous" type="text/javascript" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>  
   </body>
 </html>
