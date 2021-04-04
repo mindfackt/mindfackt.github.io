@@ -6,3 +6,19 @@
 body {
   padding-top: 56px;
 }
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #212529;
+}
+.bg-cover {
+  background-image: url(../galaxy-bg.jpg);
+  background-size: cover !important;
+}
