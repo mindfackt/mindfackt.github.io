@@ -92,3 +92,73 @@ footer {
   50%{background-position:4% 100%}
   100%{background-position:97% 0%}
 }
+
+.our-team{
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.our-team img{
+  width: 100%;
+  height: auto;
+}
+.our-team .team-content{
+  width: 100%;
+  background: #d1d1d1;
+  padding-top: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: all 0.3s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s;
+}
+.our-team:hover .team-content{ transform: translateY(0); }
+.our-team .title{
+  display: block;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.our-team .post{
+  display: block;
+}
+.our-team .social{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.our-team .social p{
+  display: inline-block;
+  margin-top: 0px;
+}
+.our-team .social p a{
+  display: block;
+  line-height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease 0s;
+}
+.bg-glass {
+  background-color: transparent !important;
+
+}
+.glass-container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+.glass-container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
