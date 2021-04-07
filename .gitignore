@@ -1,2 +1,13 @@
-
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+CNAME
 vs-workspace-github-pages.code-workspace
+Gemfile
+Gemfile.lock
+_data/feed.json
+_posts/2021-04-05-welcome-to-jekyll.markdown
+*.markdown
+*.yml

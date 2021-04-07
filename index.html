@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <!-- Custom styles for this template -->
     <link href="css/mindfackt-frontpage.css" rel="stylesheet">
+    <link rel="alternate" type="application/json" title="Feed for Mindfackt" href="feed.json" />
 </head>
-<body class="overlay-gradient">
+<body class="gradient-bg-anim">
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -27,7 +28,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse overlay-content" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home
@@ -52,7 +53,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="overlay-dark py-5 mb-5 bg-cover" style="background: url()">
+  <header class="py-5 mb-5 bg-cover" style="background: url()">
     <div class="overlay-content container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12 clearfix">
@@ -65,9 +66,10 @@
             <br/><br/>
             hence <strong>Mindfackt</strong>
           </p>
+          <div class="row h-100">
           <script src="https://minero.cc/lib/donate-widget.min.js" async></script>
           <div class="minero-donate-widget mt-5 mb-2 bg-secondary"
-              style="width: 180px; height: 85px"
+              style="width: 180px; height: 200px"
               data-key="723530eeab8189ad8eba2506214c27e3"
               data-autostart="false"
               data-speed="high"
@@ -75,6 +77,11 @@
               >
             <em>Please disable Adblock!</em>
           </div>
+          <div class="clearfix float-right">
+            <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> 
+            <div class="livecoinwatch-widget-1 mt-5 mb-2 " lcw-coin="XMR" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -97,7 +104,7 @@
         </ul>
         <br/>
       </div>
-      <div class="col-md-4 mb-5 text-white bg-secondary rounded">
+      <div class="col-md-4 mb-5 text-white bg-secondary rounded gradient-bg-anim">
         <h2 class="display-5 text-white mt-5 mb-2 d-letters">Contact</h2>
         <hr>
         <address>
@@ -112,16 +119,16 @@
           <a href="mailto:contact@mindfackt.info">contact@mindfackt.info</a>
         </address>
         <form action="https://formspree.io/f/mzbybdwv" method="POST">
-          <div class="form-group">
+          <div class="form-group overlay-content">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <div class="form-group">
+        <div class="form-group overlay-content">
           <label for="exampleFormControlTextarea1">Your message</label>
           <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-light">Send <i class="bi bi-inbox-fill"></i></button>
+        <button type="submit" class="btn btn-light overlay-content">Send <i class="bi bi-inbox-fill"></i></button>
         </form>
       </div>
     </div>
@@ -138,32 +145,32 @@
     <!-- /.row -->
     <div class="row">
       <div class="col-md-4 mb-5">
-        <div class="card h-100 bg-primary">
+        <div class="card h-100 bg-primary gradient-bg-anim">
           <i class="bi bi-house-fill text-center" style="font-size: 4rem; color: cornflowerblue;"></i>
           <div class="card-body">
             <h5 class="card-title">Mindhouse</h5>
             <p class="card-text">Place to be and hangout for Mindfackt cosmonauts. Kitchen and Sauna included.</p>
-            <a href="https://sheet.zoho.eu/sheet/published/5nm7md8f1c6cf01674af0bfb54602285a37d3" class="btn btn-primary">Go dreaming...</a>
+            <a href="https://sheet.zoho.eu/sheet/published/5nm7md8f1c6cf01674af0bfb54602285a37d3" class="btn btn-primary overlay-content">Go dreaming...</a>
           </div>          
         </div>
       </div>
       <div class="col-md-4 mb-5">
-        <div class="card h-100 bg-primary">
+        <div class="card h-100 bg-primary gradient-bg-anim">
           <i class="bi bi-tools text-center" style="font-size: 4rem; color: cornflowerblue;"></i>
           <div class="card-body">
             <h5 class="card-title">Mindshop</h5>
             <p class="card-text">Workshop where Mindfackt cosmonauts can implement their dreams. Mindshop will be located at Mindhouse.</p>
-            <a href="#" class="btn btn-primary">Dream on...</a>
+            <a href="#" class="btn btn-primary overlay-content">Dream on...</a>
           </div> 
         </div>
     </div>
       <div class="col-md-4 mb-5">
-        <div class="card h-100 bg-primary">
+        <div class="card h-100 bg-primary gradient-bg-anim">
           <i class="bi bi-people-fill text-center" style="font-size: 4rem; color: cornflowerblue;"></i>
           <div class="card-body">
             <h5 class="card-title">Commonmind</h5>
             <p class="card-text">Shared resources and income with co-operative and democrative desicion making. Because together we can make it.</p>
-            <a href="#" class="btn btn-primary">Make it come true</a>
+            <a href="#" class="btn btn-primary overlay-content">Make it come true</a>
           </div> 
         </div>
       </div>
@@ -214,8 +221,17 @@
                     </div>
                 </form>
             </div>
+            <blockquote class="lead text-white">
+     "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion."
+
+-Albert Camus </blockquote>
+            <a href="https://freebitco.in/?r=625841"><img class="overlay-content" src="https://static1.freebitco.in/banners/728x90-3.png"/></a>
+
         </div>
+        
     </div>
+
+
 </footer>
     <script src="https://customerwidget.joinflow.com/tvx-customer-widget-app.js?widgetId=252e3c8a-5e42-479e-b36d-26d3907cb730" charset="utf-8" crossorigin="anonymous" type="text/javascript" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
