@@ -54,6 +54,18 @@ footer {
   display: block;
   opacity: 0.55;
 }
+.overlay {
+  position: absolute;
+  color: white;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+ }
 .overlay-content {
   z-index: 99;
   position: relative;
@@ -92,7 +104,6 @@ footer {
   50%{background-position:4% 100%}
   100%{background-position:97% 0%}
 }
-
 .our-team{
   text-align: center;
   overflow: hidden;
@@ -104,38 +115,26 @@ footer {
 }
 .our-team .team-content{
   width: 100%;
-  background: #d1d1d1;
+  min-height: 100%;
+  background:none;
   padding-top: 10%;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(100%);
-  transition: all 0.3s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s;
 }
-.our-team:hover .team-content{ transform: translateY(0); }
-.our-team .title{
-  display: block;
-  font-weight: 800;
-  letter-spacing: 1px;
+.title {
+	letter-spacing:0.5em;
+  -webkit-text-fill-color: rgb(7, 7, 7);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  text-shadow: 
+						3px 3px #000000,
+						5px 5px #00f7ffb2; 
 }
-.our-team .post{
-  display: block;
-}
-.our-team .social{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.our-team .social p{
-  display: inline-block;
-  margin-top: 0px;
-}
-.our-team .social p a{
-  display: block;
-  line-height: 35px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s ease 0s;
+.text-2 {
+  font-size: medium;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.8);
 }
 .bg-glass {
   background-color: transparent !important;
@@ -148,6 +147,26 @@ footer {
   z-index: 1;
   background: inherit;
   overflow: hidden;
+}
+.bg-dark-glass {
+  opacity: 0.55;
+}
+
+.bg-dark-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  display: block;
+  opacity: 0.55;
 }
 .glass-container:before {
   content: "";
