@@ -84,9 +84,9 @@ footer {
   background: linear-gradient(307deg, #f30604, #0039e3, #51f735);
   background-size: 600% 600%;
 
-  -webkit-animation: bg-mfckt 30s ease infinite;
-  -moz-animation: bg-mfckt 30s ease infinite;
-  animation: bg-mfckt 30s ease infinite;
+  -webkit-animation: bg-mfckt 60s ease infinite;
+  -moz-animation: bg-mfckt 60s ease infinite;
+  animation: bg-mfckt 60s ease infinite;
 }
 
 @-webkit-keyframes bg-mfckt {
